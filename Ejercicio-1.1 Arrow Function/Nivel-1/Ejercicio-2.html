@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2</title>
+</head>
+<body>
+    <h2>Ejercicio 1.2: Arrow functions</h2>
+    <h3 id="randomNums"></h3>
+    <script>
+        let randomNumber = () => Math.floor(Math.random()*101);
+        let randomNum = randomNumber();
+
+        document.getElementById("randomNums").innerHTML = "Random numero sin parametro" + ' ' + randomNum;
+        console.log(randomNum);
+    </script>
+</body>
+</html>
