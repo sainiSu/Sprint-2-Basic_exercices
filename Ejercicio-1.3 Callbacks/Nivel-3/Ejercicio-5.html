@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-5</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1.3.4: Callbacks</h2>
+
+    <script>
+
+        //Write a processString function that accepts two parameters: a character string and a callback function. The processString function must convert the string to uppercase and then call the callback function with the transformed string.
+
+        function processString(string, callback) {
+           let uppercaseString = string.toUpperCase();
+            callback(uppercaseString);
+        }
+
+        let inputString = "good morning!";
+
+        processString(inputString, function (uppercaseString) {
+            console.log('Transformed string:', uppercaseString);
+        });
+        
+    </script>
+</body>
+
+</html>

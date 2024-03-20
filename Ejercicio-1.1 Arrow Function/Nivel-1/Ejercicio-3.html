@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-3</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1.3: Arrow functions</h2>
+
+    <script>
+
+        //Create a person class With name property:
+
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+            //Arrow function:
+
+            greet = () => {
+                console.log(`Hello , ${this.name}`);
+            }
+        }
+        const person1 = new Person("Om");
+        person1.greet();
+
+
+    </script>
+</body>
+
+</html>

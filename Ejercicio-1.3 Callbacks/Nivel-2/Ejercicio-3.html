@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-1</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1.3.3: Callbacks</h2>
+
+    <script>
+ //Using callbacks in asynchronous functions: Write a waitISHello function that accepts two parameters: a name and a callback function. The function must wait 2 seconds and then invoke the callback function, passing the name as a parameter.
+ 
+function waitISHello(name, callback) {
+  setTimeout(function() {callback(name);}, 2000); //2 seconds
+}
+
+waitISHello('Om', function(name) {
+  console.log('Hola, ' + name + ' '+ ':)');
+});
+
+    </script>
+</body>
+
+</html>

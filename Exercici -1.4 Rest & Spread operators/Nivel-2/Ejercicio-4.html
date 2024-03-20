@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+
+<body>
+    <h2>Exercici 1.4.4 Rest & Spread operators</h2>
+
+    <script>
+        //Rest in Destructuring: Create an array with several elements. It uses destructuring and the remainder operator to assign the first two elements to variables, and then assigns the rest of the elements to a third variable.
+
+        // array with 10 numbers
+
+        const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+
+        // Use destructuring and the rest operator
+
+        const [firstNumber, secondNumber, thirdNumber, ...restNumbers] = array1;
+
+        // Output the assigned variables
+        console.log('First no.:', firstNumber);  
+        console.log('Second no.:', secondNumber); 
+        console.log('Third no.:', thirdNumber); 
+        console.log('rest no.:', restNumbers);  
+
+    </script>
+</body>
+
+</html>

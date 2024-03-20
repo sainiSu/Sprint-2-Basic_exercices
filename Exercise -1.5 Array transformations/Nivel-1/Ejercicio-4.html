@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+<body>
+    <h2>Exercise -1.5.4 Array transformations</h2>
+    <h3 id="result"></h3>
+
+    <script>
+
+        //Reduce: You have an array of numbers [13, 7, 8, 21]. Use the reduce function to calculate the total sum of the numbers.
+
+        var array = [13, 7, 8, 21];
+
+        document.getElementById("result").innerHTML = array.reduce(getSum);
+
+        function getSum(total,num){
+         
+            return total + Math.round(num);
+        }
+    </script>
+</body>
+</html>

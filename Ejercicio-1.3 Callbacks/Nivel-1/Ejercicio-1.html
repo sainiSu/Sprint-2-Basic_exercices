@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-1</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1.3.1: Callbacks</h2>
+    <h3 id="result"></h3>
+
+    <script>
+        //Basic callback: Write a function called process that accepts two parameters: a number and a callback function. The process function must invoke the callback function, passing the number as a parameter.
+
+        function myDisplayer(something) {
+            document.getElementById("result").innerHTML = something;
+        }
+
+        function process(num1, myCallback) {
+            let sum = num1;
+            myCallback(sum);
+        }
+
+        process(5, myDisplayer);
+    </script>
+</body>
+
+</html>

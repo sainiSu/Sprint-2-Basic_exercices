@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio-2</title>
+  </head>
+
+  <body>
+    <h2>Exercici 1.4.2 Rest & Spread operators</h2>
+    <h3 id="result"></h3>
+
+    <script>
+      //Rest Operator in Functions: Create a 'sum' function that uses the rest operator to accept an indeterminate number of arguments and return their sum.
+
+      function sum(...numbers) {
+        let total = 0;
+        for (const args of numbers){
+            total += args;
+        }
+        return total;
+      }
+      //const numbers = [9, 9];
+      let final = sum(9,9);
+
+      document.getElementById("result").innerHTML = final;
+      console.log(sum(9,9));
+    </script>
+  </body>
+</html>

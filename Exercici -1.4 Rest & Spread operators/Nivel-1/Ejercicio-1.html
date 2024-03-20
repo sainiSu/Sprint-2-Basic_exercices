@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-1</title>
+</head>
+
+<body>
+    <h2>Exercici 1.4.1 Rest & Spread operators</h2>
+    <h3 id="result"></h3>
+
+    <script>
+        //Spread operator in Arrays: Creates two arrays, array1 and array2. Use the spread operator to create a third array containing all the elements of array1 and array2.
+
+        const array1 = [1, 2, 3, 4];
+        const array2 = [9, 8, 7, 6];
+        let final = [...array1, ...array2];
+        document.getElementById("result").innerHTML = final;
+    </script>
+</body>
+
+</html>

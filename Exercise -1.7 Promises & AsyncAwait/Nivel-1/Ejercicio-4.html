@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+<body>
+    <h2>Exercise 1.7.4: Promises & Async/Await</h2>
+    <h3 id="result"></h3>
+
+    <script>
+        //Using async/await: Write an asynchronous function that uses the await function to wait for the result of the promise created in Exercise 1, and then prints that result to the console.
+ 
+        async function display(){
+       let myPromise = new Promise(function (myResolve) {
+            setTimeout(function () { myResolve("Hello World"); }, 2000);
+        });
+            document.getElementById("result").innerHTML = await myPromise;
+        }
+        display();
+    </script>
+</body>
+</html>

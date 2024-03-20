@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2</title>
+</head>
+<body>
+    <h2>Exercise 1.7.2: Promises & Async/Await</h2>
+
+    <script>
+        //Use of a Promise: Use the promise created in the previous exercise. Create a .then that prints the result to the console
+        const myPromise = new Promise( (myResolve, myReject) => {
+            setTimeout(() =>{ myResolve("Hello World"); }, 2000);
+        });
+
+        myPromise.then( (value) =>{
+            console.log(value);//print the result in console
+        });
+    </script>
+</body>
+</html>

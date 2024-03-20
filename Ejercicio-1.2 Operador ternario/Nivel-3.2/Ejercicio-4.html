@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-4</title>
+</head>
+<body>
+    <h2>Ejercicio 1.2.3: Operador ternario</h2> 
+    <script>
+        //Ternary operator within a loop: Write an evenOdd function that accepts an array of numbers and uses a loop to loop through the array. Inside the loop, use the ternary operator to determine whether each number is even or odd.
+        
+            //let array;
+           // let par = array[i] % 2 === 0;
+            //let impar = array[i] % 2 != 0;
+          
+            function parOimpar(array){
+
+            for(let i = 0; i < array.length; i++ ){
+             const result = array[i] % 2 === 0 ? `${array[i]} es par.`:`${array[i]} es impar.`;
+             console.log(result);
+            }
+        }
+        let numeros = [ 1,2,3,4,5,6];
+        parOimpar(numeros);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-3</title>
+</head>
+<body>
+    <h2>Exercici 1.4.3 Rest & Spread operators</h2>
+    <h3 id="result"></h3>
+
+    <script>
+        //Copying objects with Spread: Create an object 'object1'. It then creates a second object, 'object2', which is a copy of 'object1' using the spread operator. Change a property of 'object2' and check that 'object1' has not changed.
+
+        // Create object1 with some fruits
+const object1 = {fruit1: 'Mango',
+                 fruit2: 'watermelon'};
+
+const object2 = { ...object1 };
+
+// Change a property of object2 by adding other fruit1 name:
+
+object2.fruit1 = 'kiwi';
+
+console.log('object1 fruits:', object1);
+console.log('object2 modified fruit1:', object2);
+
+    </script>
+</body>
+</html>

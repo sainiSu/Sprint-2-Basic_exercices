@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio-4</title>
+</head>
+
+<body>
+    <h2>Ejercicio 1.3.4: Callbacks</h2>
+
+    <script>
+        //Callbacks with arrays: Write a function processarElements that accepts two parameters: an array and a callback function. The processElements function must call the callback function for each element in the array
+
+        function processarElements(arr, callback) {
+            arr.forEach(function (element) {
+                callback(element);
+            });
+        }
+
+        var array = [10, 20, 30, 40, 50, 60, 70];
+
+        processarElements(array, function (element) {
+            console.log("Array element:", element);
+        });
+    </script>
+</body>
+
+</html>

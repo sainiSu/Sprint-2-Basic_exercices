@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-2</title>
+</head>
+<body>
+    <h2>Exercise -1.5.2 Array transformations</h2>
+    <h3 id="result"></h3>
+
+    <script>
+
+        //Filter: You have an array of numbers [1, 2, 3, 4]. Create a new array containing only the even numbers.
+
+        var array = [1, 2, 3, 4] //given
+
+        document.getElementById("result").innerHTML = array.filter(evenNumbers);
+        
+        function evenNumbers(number){
+            return number % 2 ===0;
+        }
+    </script>
+
+</body>
+</html>

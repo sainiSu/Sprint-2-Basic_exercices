@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-6</title>
+</head>
+
+<body>
+    <h2>Exercise 1.7.6: Promises & Async/Await</h2>
+
+    <script>
+
+        //Promise.all: Creates two promises that resolve after 2 and 3 seconds respectively. Use Promise.all to wait for both promises to resolve, and print the results to the console.
+
+        const promise1 = new Promise((myResolve) => {
+            setTimeout(() => { myResolve("Promise1"); }, 2000);//display after 2 seconds 
+        });
+        const promise2 = new Promise((myResolve) => {
+            setTimeout(() => { myResolve("Promise2"); }, 3000);//display after 3 seconds
+        });
+        Promise.all([promise1,promise2]).then((results)=>{
+            console.log(results);
+        })
+        .catch((error)=>{
+        console.log(error);
+        });
+
+    </script>
+</body>
+
+</html>
